@@ -63,7 +63,6 @@ for(var i=0;i<layers.length;i++) add_staf_layer(layers[i], map);
 //map.addLayer(cache_layer);
 //
 
-/*
 $.getJSON('http://localhost:7000/latest', function (data) {
 
 	var velocityLayer = L.velocityLayer({
@@ -74,9 +73,10 @@ $.getJSON('http://localhost:7000/latest', function (data) {
 			displayEmptyString: 'No wind data'
 		},
 		data: data,
-		maxVelocity: 15
+		maxVelocity: 15,
+    velocityScale: 0.002,
+    colorScale: ['rgba(0, 0, 255, 0.2)', 'rgba(0, 0, 255, 0.3)', 'rgba(0, 0, 255, 0.4)', 'rgba(0, 0, 255, 0.5)']
 	});
 
   map.addLayer(velocityLayer);
 });
-*/
